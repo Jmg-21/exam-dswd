@@ -14,7 +14,6 @@ export class FetchApiComponent implements OnInit {
   ngOnInit(): void {
     this.http.getRegion().subscribe((data) => {
       this.regions = data;
-      console.log('data', data);
     });
   }
 }

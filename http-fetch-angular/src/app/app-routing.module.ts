@@ -12,12 +12,12 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
   },
   {
-    path: '',
+    path: 'login',
     loadChildren: () =>
       import('./login/login.module').then((m) => m.LoginModule),
   },
   {
-    path: 'fetchApi',
+    path: '',
     loadChildren: () =>
       import('./fetch-api/fetch-api.module').then((m) => m.FetchApiModule),
   },
