@@ -16,6 +16,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./login/login.module').then((m) => m.LoginModule),
   },
+  {
+    path: 'fetchApi',
+    loadChildren: () =>
+      import('./fetch-api/fetch-api.module').then((m) => m.FetchApiModule),
+  },
 ];
 
 @NgModule({
