@@ -1,0 +1,15 @@
+<div class="region-container">
+  <span class="heading">Fetch Api call demonstration</span>
+  <div class="content">
+    <span class="title">Region</span>
+    <select class="form-select" aria-label="Default select example">
+      <option selected>[Select Regio]</option>
+      <option
+        *ngFor="let region of regions; let i = index"
+        value="{{ region.Id }}"
+      >
+        {{ region.Name }}
+      </option>
+    </select>
+  </div>
+</div>
